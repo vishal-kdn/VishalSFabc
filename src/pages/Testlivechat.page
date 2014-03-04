@@ -1,0 +1,20 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  
+  <script type='text/javascript' src='https://c.la1t1.salesforceliveagent.com/content/g/js/29.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1t1.salesforceliveagent.com/chat', '57290000000LBfm', '00D90000000nMvO');
+</script>
+
+<img id="liveagent_button_online_57390000000LBwN" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChat('57390000000LBwN')" src="https://warehouse9876-developer-edition.ap1.force.com/resource/1389346352000/image1" /><img id="liveagent_button_offline_57390000000LBwN" style="display: none; border: 0px none; " src="https://warehouse9876-developer-edition.ap1.force.com/resource/1389948718000/image2" />
+<script type="text/javascript">
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('57390000000LBwN', document.getElementById('liveagent_button_online_57390000000LBwN'));
+liveagent.showWhenOffline('57390000000LBwN', document.getElementById('liveagent_button_offline_57390000000LBwN'));
+});</script>
+
+
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

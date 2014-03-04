@@ -1,0 +1,88 @@
+<apex:page standardController="Contact" contentType="application/msword#Demo.doc; charset=Windows-1252#" cache="true" standardStylesheets="false" >
+ 
+<html>
+        <style>
+            @page
+            {
+                mso-page-orientation:portrait;
+                mso-pagination:widow-orphan;
+                margin:1cm 3cm 1cm 3cm;
+                size: 21cm 29.7cm;  <!-- Set the page layout for the Document -->
+               
+            }
+            @page Section1{
+                mso-header:h1;      <!-- Set the header for the document --> 
+                mso-header-margin:0in;
+                mso-footer-margin:5mm;
+                mso-first-footer:f1;    <!-- Set the footer for first page of the document -->
+                mso-footer:f2;      <!-- Set the footer for rest page of the document -->
+                mso-title-page:yes; <!-- Set title page for the document -->
+            }
+           
+            div.Section1{
+                 page:Section1;
+                 font-family: Book Antiqua;
+                 font-size: 15px;
+            }
+           
+            div.topAddress{
+                margin: 0pt auto;
+                text-align: center;
+                font-weight: bold;
+            }
+ 
+            p.MsoFooter, li.MsoFooter, div.MsoFooter{   <!-- Set the footer css for the document -->
+                mso-pagination:widow-orphan;
+                font-size: 14px;
+             }
+            table#table1{
+                    margin:0in 0in 0in 9in;
+                }  
+        </style>
+        <body>
+                <div class="Section1">
+                          <!--Header Start-- >
+                            <div class="topAddress">
+                               Header Content
+                              <br clear="all" />
+                              Header Content          
+                           </div>
+                        <!--Header ends -- >
+ 
+               <p> Demo body goes Here</p>
+ 
+                <!-- Footer Starts-->
+                                 
+                   <table id='table1' border='0' cellspacing='0' width='100%' cellpadding='0'>
+                          <tr>
+                           <td style="width:100%">
+                           <div style='mso-element:footer' id='f1'>
+                                   <p class="MsoFooter" style="text-align: center; font-color:#707070; ">
+                                       
+                                        ---Footer ----
+                                    <p style="text-align: right; font-color:#707070; ">
+                                            <span> Page </span>
+                                            <span style='mso-field-code:PAGE'></span>
+                                            <span> of </span>  
+                                            <span style='mso-field-code:NUMPAGES'></span>
+                                   </p>
+                                                 
+                                   </p>
+                                <div style='mso-element:footer' id='f2'>
+                                   <p class="MsoFooter" style="text-align: right; font-color:#707070; ">
+                                             <span> Page </span>
+                                             <span style='mso-field-code:PAGE'></span>
+                                             <span> of </span>  
+                                             <span style='mso-field-code:NUMPAGES'></span>
+                                             <br/>
+                                    </p>
+                                 </div>
+                           </div>
+                          </td>
+                          </tr>
+                  </table>
+                 <!-- Footer ends -->
+                 </div>
+         </body>
+ </html>
+ </apex:page>
